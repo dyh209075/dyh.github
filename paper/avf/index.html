@@ -31,7 +31,7 @@
 <a class="icon icon-home" href="../.."> 社区介绍
         </a><div role="search">
 <form action="../../search.html" class="wy-form" id="rtd-search-form" method="get">
-<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+<input aria-label="Search docs" name="q" placeholder="搜索文档" title="Type search term here" type="text"/>
 </form>
 </div>
 </div>
@@ -86,7 +86,7 @@
 <li><a aria-label="Docs" class="icon icon-home" href="../.."></a></li>
 <li class="breadcrumb-item active">如何让机器像人一样融合视听信息来“感受”情绪？</li>
 <li class="wy-breadcrumbs-aside">
-<a class="icon icon-github" href="https://github.com/OpenHUTB/.github/edit/master/docs/paper/avf.md"> Edit on GitHub</a>
+<a href="https://github.com/OpenHUTB/.github/edit/master/docs/paper/avf.md"> 编辑页面</a>
 </li>
 </ul>
 <hr/>
@@ -100,8 +100,8 @@
 <p>来自 OpenHUTB 的研究团队，在人工智能领域顶级国际期刊《Information Fusion》上发表的最新研究成果，或许提供了一条全新的思路。他们提出的<strong>类脑情感学习的视听融合</strong>（Audio-Visual Fusion for Brain-like Emotion Learning, AVF-BEL）模型，不再单纯依赖数据“暴力计算”，而是选择了一条更优雅的路——<strong>模仿大脑处理情感的神经通路</strong>。</p>
 <h2 id="_2">核心思想：向大脑学习“通感”</h2>
 <p>人类的情感体验，往往是多感官融合的结果。一段悲伤的音乐配合灰暗的画面，远比单独的音乐或画面更能触动我们。这种<strong>视听整合</strong>发生在大脑的颞上沟等区域。</p>
-<p><img alt="" src="../../img/paper/neuro_architecture.png"/></p>
-<center>情绪生成神经网络架构图（动态情绪响应的视觉和听觉处理）</center>
+<p><img alt="" src="../../img/paper/neuro_architecture.png"/>
+</p><center>情绪生成神经网络架构图（动态情绪响应的视觉和听觉处理）</center>
 <p>AVF-BEL 模型的核心理念，就是在计算模型中模拟这条从感知到情感的神经通路。它并非一个简单的大模型，而是一个精巧的模块化架构，包含四个核心部分：</p>
 <ol>
 <li>
@@ -111,8 +111,8 @@
 <p><strong>听觉皮层模块</strong>：构建了一个包含兴奋性（锥体细胞）和抑制性（PV、SOM 中间神经元）的简化脉冲神经网络，从音乐中提取声学特征（如音高、音量、节奏等）。</p>
 </li>
 </ol>
-<p><img alt="" src="../../img/paper/representation.png"/></p>
-<center>听觉和视觉情感特征表征</center>
+<p><img alt="" src="../../img/paper/representation.png"/>
+</p><center>听觉和视觉情感特征表征</center>
 <ol>
 <li>
 <p><strong>多模态融合模块</strong>：模仿颞上沟的功能，通过门控机制动态调整视听信息的权重，将两者有效整合。</p>
@@ -121,15 +121,15 @@
 <p><strong>情感学习与生成模块（BEL）</strong>：基于经典的脑情感学习模型，模拟杏仁核和眶额皮层之间的相互作用，通过“神经基线约束奖励”机制，学习并最终生成一个衡量情绪积极程度的数值——情绪积极度参数（EPP） 。</p>
 </li>
 </ol>
-<p><img alt="" src="../../img/paper/AVF-BEL.png"/></p>
-<center>AVF-BEL 模型架构</center>
+<p><img alt="" src="../../img/paper/AVF-BEL.png"/>
+</p><center>AVF-BEL 模型架构</center>
 <h2 id="_3">亮点与优势：轻量、可解释</h2>
 <p>与动辄百亿参数、需要 GPU 集群的多模态大模型（如 ViLBERT、CLIP）相比，AVF-BEL 模型展现出了独特的魅力：</p>
 <ul>
 <li><strong>极致轻量</strong>：整个模型总参数量仅约 208 万，其中核心的情感学习模块更是只有 8 个可训练的权重。它可以在普通 CPU（如 Intel i7-6500U）和 8GB 内存的电脑上运行，整个代码和数据包不足 50MB。</li>
 </ul>
-<p><img alt="" src="../../img/paper/heatmap.png"/></p>
-<center>模型权重矩阵的热力图</center>
+<p><img alt="" src="../../img/paper/heatmap.png"/>
+</p><center>模型权重矩阵的热力图</center>
 <ul>
 <li><strong>高可解释性</strong>：模型的每个模块都能对应到具体的脑区功能。例如，通过 Grad-CAM 可视化，可以清晰地看到其视觉模块从 V1 到 IT 区，关注区域从边缘轮廓逐步聚焦到与情绪相关的物体核心区域，这与灵长类视觉腹侧通路的处理机制高度吻合。</li>
 </ul>
@@ -176,8 +176,6 @@
 <!-- Copyright etc -->
 <p>OpenHUTB 版权所有 © 2026</p>
 </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
 </div>
 </div>
@@ -186,7 +184,7 @@
 <div aria-label="Versions" class="rst-versions" role="note">
 <span class="rst-current-version" data-toggle="rst-current-version">
 <span>
-<a class="fa fa-github" href="https://github.com/OpenHUTB/.github" style="color: #fcfcfc"> GitHub</a>
+<a href="https://github.com/OpenHUTB/.github" style="color: #fcfcfc">OpenHUTB</a>
 </span>
 </span>
 </div>

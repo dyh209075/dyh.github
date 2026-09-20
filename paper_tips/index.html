@@ -31,7 +31,7 @@
 <a class="icon icon-home" href=".."> 社区介绍
         </a><div role="search">
 <form action="../search.html" class="wy-form" id="rtd-search-form" method="get">
-<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+<input aria-label="Search docs" name="q" placeholder="搜索文档" title="Type search term here" type="text"/>
 </form>
 </div>
 </div>
@@ -90,7 +90,7 @@
 <li><a aria-label="Docs" class="icon icon-home" href=".."></a></li>
 <li class="breadcrumb-item active">论文写作技巧</li>
 <li class="wy-breadcrumbs-aside">
-<a class="icon icon-github" href="https://github.com/OpenHUTB/.github/edit/master/docs/paper_tips.md"> Edit on GitHub</a>
+<a href="https://github.com/OpenHUTB/.github/edit/master/docs/paper_tips.md"> 编辑页面</a>
 </li>
 </ul>
 <hr/>
@@ -308,13 +308,13 @@ You can also round numbers, for example <span class="k">\num</span><span class="
 <h2 id="python">Python 帮助脚本</h2>
 <p>如果可能，所有图形的标签、坐标轴等都应使用相同的字体。尤其要注意，不要让一个图形的标签/刻度较大，而另一个图形的标签/刻度较小。一个解决方案是在生成图形的脚本中定义图形的大小，而不是在文档中重新缩放（例如，不要在 LaTeX 文档中更改图形的宽度设置<code>\textwidth</code>）。</p>
 <p>为了获得一致的图形，我们建议使用类似于我们的辅助脚本<a href="https://github.com/Wookai/paper-tips-and-tricks/blob/master/src/python/plot_utils.py"><code>plot_utils.py</code></a>。使用此脚本，您只需调用<code>figure_setup()</code>函数定义所有尺寸，然后创建所需尺寸的图形并保存即可。</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">argparse</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">plot_utils</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pu</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">plot_utils</span> <span class="k">as</span> <span class="nn">pu</span>
 
 
-<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
     <span class="n">y</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="p">))</span>
 
@@ -386,16 +386,14 @@ You can also round numbers, for example <span class="k">\num</span><span class="
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
-<a class="btn btn-neutral float-left" href="../CONTRIBUTING/" title="贡献指南"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-<a class="btn btn-neutral float-right" href="../env_conf/" title="搭建自定义开发环境">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral float-left" href="../CONTRIBUTING/" title="贡献指南"><span class="icon icon-circle-arrow-left"></span> 前一页</a>
+<a class="btn btn-neutral float-right" href="../env_conf/" title="搭建自定义开发环境">后一页 <span class="icon icon-circle-arrow-right"></span></a>
 </div>
 <hr/>
 <div role="contentinfo">
 <!-- Copyright etc -->
 <p>OpenHUTB 版权所有 © 2026</p>
 </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
 </div>
 </div>
@@ -404,10 +402,10 @@ You can also round numbers, for example <span class="k">\num</span><span class="
 <div aria-label="Versions" class="rst-versions" role="note">
 <span class="rst-current-version" data-toggle="rst-current-version">
 <span>
-<a class="fa fa-github" href="https://github.com/OpenHUTB/.github" style="color: #fcfcfc"> GitHub</a>
+<a href="https://github.com/OpenHUTB/.github" style="color: #fcfcfc">OpenHUTB</a>
 </span>
-<span><a href="../CONTRIBUTING/" style="color: #fcfcfc">« Previous</a></span>
-<span><a href="../env_conf/" style="color: #fcfcfc">Next »</a></span>
+<span><a href="../CONTRIBUTING/" style="color: #fcfcfc">« 前一页</a></span>
+<span><a href="../env_conf/" style="color: #fcfcfc">后一页 »</a></span>
 </span>
 </div>
 <script src="../js/jquery-3.6.0.min.js"></script>
