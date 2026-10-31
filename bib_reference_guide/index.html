@@ -4,18 +4,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://openhutb.github.io/.github/bib_reference_guide/" rel="canonical"/>
 <link href="../img/favicon.ico" rel="shortcut icon"/>
-<title>Bib reference guide - 社区介绍</title>
+<title>Latex文献引用编译办法 - 社区介绍</title>
 <link href="../css/theme.css" rel="stylesheet"/>
 <link href="../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
-<link href="../extra.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "Bib reference guide";
+        var mkdocs_page_name = "Latex\u6587\u732e\u5f15\u7528\u7f16\u8bd1\u529e\u6cd5";
         var mkdocs_page_input_path = "bib_reference_guide.md";
-        var mkdocs_page_url = null;
+        var mkdocs_page_url = "/.github/bib_reference_guide/";
       </script>
 <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
@@ -31,13 +30,17 @@
 <a class="icon icon-home" href=".."> 社区介绍
         </a><div role="search">
 <form action="../search.html" class="wy-form" id="rtd-search-form" method="get">
-<input aria-label="Search docs" name="q" placeholder="搜索文档" title="Type search term here" type="text"/>
+<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
 </form>
 </div>
 </div>
 <div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="..">首页</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../simulator/">模拟器简介</a>
 </li>
 </ul>
 <ul>
@@ -72,6 +75,51 @@
 <li class="toctree-l1"><a class="" href="https://openhutb.github.io/doc/build_carla/#internet">科学上网</a>
 </li>
 </ul>
+<p class="caption"><span class="caption-text">贡献相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../codespace/">基于浏览器的贡献指南</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/sign_up/">注册 Github 账号</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/vscode_push/">使用 VScode 推送代码</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pycharm-tutorial/">PyCharm 教程</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../resolve_conflict/">使用 TortoiseGit 解决冲突</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/merge_commit/">合并提交</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/vm_disk/">给 Ubuntu 虚拟机硬盘扩容</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../note/">注意事项</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../wsl/">wsl 安装与配置和卸载</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">工具与资源</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/">开源工具列表</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../blender/">三维建模软件 Blender 介绍</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown2anything/">Markdown 一键发布到社交平台</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">学习与论文</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="./">Latex文献引用编译办法</a>
+<ul class="current">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../undergraduate/">本科毕业设计</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../paper/avf/">论文成果：AVF-BEL 视听融合</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../org/architecture/">社区组织形式</a>
+</li>
+</ul>
 </div>
 </div>
 </nav>
@@ -84,22 +132,25 @@
 <div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
 <ul class="wy-breadcrumbs">
 <li><a aria-label="Docs" class="icon icon-home" href=".."></a></li>
-<li class="breadcrumb-item active">Bib reference guide</li>
+<li class="breadcrumb-item">学习与论文</li>
+<li class="breadcrumb-item active">Latex文献引用编译办法</li>
 <li class="wy-breadcrumbs-aside">
-<a href="https://github.com/OpenHUTB/.github/edit/master/docs/bib_reference_guide.md"> 编辑页面</a>
+<a class="icon icon-github" href="https://github.com/OpenHUTB/.github/edit/master/docs/bib_reference_guide.md"> Edit on GitHub</a>
 </li>
 </ul>
 <hr/>
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<div><h2 id="latex">配套社区LaTeX资源</h2>
-<p>本文参考文献编译操作，可以搭配OpenHUTB社区的LaTeX模板仓库使用：
-* <a href="https://github.com/OpenHUTB/course">课程论文latex模板</a>
-* <a href="https://github.com/OpenHUTB/undergraduate">本科毕设latex模板</a>
-* <a href="https://github.com/OpenHUTB/master">硕士论文LaTeX模板</a></p>
+<div><h2 id="配套社区latex资源">配套社区LaTeX资源</h2>
+<p>本文参考文献编译操作，可以搭配OpenHUTB社区的LaTeX模板仓库使用：  </p>
+<ul>
+<li><a href="https://github.com/OpenHUTB/course">课程论文latex模板</a> </li>
+<li><a href="https://github.com/OpenHUTB/undergraduate">本科毕设latex模板</a> </li>
+<li><a href="https://github.com/OpenHUTB/master">硕士论文LaTeX模板</a> </li>
+</ul>
 <p>读者可以前往对应仓库获取完整LaTeX论文模板，本文仅讲解参考文献编译相关操作。</p>
-<h2 id="latex_1">一、LaTeX 参考文献引用核心原理</h2>
+<h2 id="一latex-参考文献引用核心原理">一、LaTeX 参考文献引用核心原理</h2>
 <p>LaTeX 的参考文献体系由 tex 主文件 + bib 文献库文件 协同工作，无法仅通过单次 PDF 编译生成正常参考文献。</p>
 <p>核心文件作用：</p>
 <ol>
@@ -109,7 +160,7 @@
 </ol>
 <p>核心编译逻辑：
 PDFLaTeX 扫描引用记录 → BibTeX 生成规范文献列表 → 两次 PDF 编译刷新标号与格式。</p>
-<h2 id="_1">二、标准完整编译顺序</h2>
+<h2 id="二标准完整编译顺序">二、标准完整编译顺序</h2>
 <p>所有课程论文、毕业论文、期刊通用四步标准流程，缺任意一步都会出现<code>[?]</code>、文献缺失、标号错乱。</p>
 <ol>
 <li>
@@ -129,8 +180,8 @@ PDFLaTeX 扫描引用记录 → BibTeX 生成规范文献列表 → 两次 PDF �
 全局刷新文中引用序号、超链接、排版格式，彻底消除问号、标号错位问题。</p>
 </li>
 </ol>
-<h2 id="_2">三、最简可直接运行模板</h2>
-<h3 id="1-tex">1. 主文件（.tex）核心代码</h3>
+<h2 id="三最简可直接运行模板">三、最简可直接运行模板</h2>
+<h3 id="1-主文件tex核心代码">1. 主文件（.tex）核心代码</h3>
 <div class="highlight"><pre><span></span><code><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
 <span class="k">\usepackage</span><span class="nb">{</span>cite<span class="nb">}</span>
 <span class="k">\usepackage</span><span class="nb">{</span>hyperref<span class="nb">}</span>
@@ -144,49 +195,51 @@ style<span class="nb">{</span>plain<span class="nb">}</span>
 
 <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
 </code></pre></div>
-<h3 id="2-refbib">2. 文献库文件（ref.bib）示例</h3>
+<h3 id="2-文献库文件refbib示例">2. 文献库文件（ref.bib）示例</h3>
 <div class="highlight"><pre><span></span><code><span class="nc">@article</span><span class="p">{</span><span class="nl">example1</span><span class="p">,</span>
 <span class="w">  </span><span class="na">title</span><span class="p">=</span><span class="s">{LaTeX文献引用技术研究}</span><span class="p">,</span>
-<span class="w">  </span><span class="na">author</span><span class="p">=</span><span class="s">{张三, 李四}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">author</span><span class="p">=</span><span class="s">{张三 and 李四}</span><span class="p">,</span>
 <span class="w">  </span><span class="na">journal</span><span class="p">=</span><span class="s">{计算机工程与应用}</span><span class="p">,</span>
 <span class="w">  </span><span class="na">year</span><span class="p">=</span><span class="s">{2024}</span>
 <span class="p">}</span>
 </code></pre></div>
-<h2 id="_3">四、常用参考文献格式样式</h2>
+<h2 id="四常用参考文献格式样式">四、常用参考文献格式样式</h2>
 <ol>
-<li><code>plain</code>：数字顺序编码，通用学术格式，本科论文常用。</li>
-<li><code>ieeetr</code>：适配 IEEE 会议、英文期刊标准格式。</li>
-<li><code>gb7714-2015</code>：中文毕业论文国标格式（首选）。</li>
+<li><code>plain</code>：以数字标注引用，文献列表通常按作者等信息排序，不按正文中首次引用的先后排列。</li>
+<li><code>ieeetr</code>：按正文引用顺序排列的数字样式；投稿时仍需使用期刊或会议指定的模板。</li>
+<li><code>gbt7714-numeric</code>：<code>gbt7714</code> 提供的 GB/T 7714—2015 顺序编码样式；著者—出版年制对应 <code>gbt7714-author-year</code>。</li>
 <li><code>apalike</code>：作者-年份引用格式，适用于社科类论文。</li>
 </ol>
-<p>中文论文国标配置专属代码：</p>
-<div class="highlight"><pre><span></span><code><span class="k">\usepackage</span><span class="nb">{</span>gb7714-2015<span class="nb">}</span>
-style<span class="nb">{</span>gb7714-2015<span class="nb">}</span>
+<p>使用 BibTeX 的模板可按下例配置国标顺序编码样式：</p>
+<div class="highlight"><pre><span></span><code><span class="k">\usepackage</span><span class="nb">{</span>gbt7714<span class="nb">}</span>
+style<span class="nb">{</span>gbt7714-numeric<span class="nb">}</span>
 </code></pre></div>
-<h2 id="_4">五、常见报错原因与解决方案</h2>
-<h3 id="1">1. 引用始终显示 <code>[?]</code></h3>
+<p>宏包名是 <code>gbt7714</code>，不是 <code>gb7714-2015</code>；需先在 TeX 发行版中安装该宏包。它与 <code>natbib</code> 配合使用，不要再叠加本页最简示例中的 <code>cite</code> 宏包。已有模板若已加载引用宏包或设置文献样式，先检查模板说明，避免重复配置。</p>
+<p>本例适用于 BibTeX，文献库仍通过 <code>{ref}</code> 载入。采用 <code>biblatex</code> 和 Biber 的模板使用另一套配置，不能直接套用这里的宏包和编译顺序。参见 <a href="https://github.com/zepinglee/gbt7714-bibtex-style#usage">gbt7714 使用说明</a>。</p>
+<h2 id="五常见报错原因与解决方案">五、常见报错原因与解决方案</h2>
+<h3 id="1-引用始终显示-">1. 引用始终显示 <code>[?]</code></h3>
 <ul>
 <li>未执行 BibTeX 编译</li>
 <li>编译顺序缺失后续两次 PDF 刷新</li>
 <li>文中<code>\cite</code>标签与 bib 文件标签大小写、字符不一致（严格区分）</li>
 </ul>
-<h3 id="2">2. 提示未定义引用、文献找不到</h3>
+<h3 id="2-提示未定义引用文献找不到">2. 提示未定义引用、文献找不到</h3>
 <ul>
 <li><code>{}</code> 调用的 bib 文件名和实际文件不匹配</li>
-<li>bib 文件存放路径错误（必须和 tex 主文件同目录）</li>
+<li>bib 文件存放路径错误（默认放在 tex 主文件同目录；放在子目录时需写成 {refs/ref} 这样的相对路径）</li>
 <li>bib 文件存在中文全角符号、空格、非法字符</li>
 </ul>
-<h3 id="3">3. 文献只显示部分内容</h3>
+<h3 id="3-文献只显示部分内容">3. 文献只显示部分内容</h3>
 <ul>
 <li>未引用的文献默认不展示，需批量展示添加：<code>\nocite{*}</code></li>
 <li>文献条目存在语法错误，BibTeX 自动跳过异常条目</li>
 </ul>
-<h3 id="4">4. 编译乱码、格式错乱</h3>
+<h3 id="4-编译乱码格式错乱">4. 编译乱码、格式错乱</h3>
 <ul>
 <li>bib 文件编码非 UTF-8</li>
 <li>手动修改自动生成的<code>.bbl</code>文件（会被编译覆盖失效）</li>
 </ul>
-<h2 id="_5">六、核心注意事项</h2>
+<h2 id="六核心注意事项">六、核心注意事项</h2>
 <ol>
 <li>
 <p><strong>禁止单次 PDF 编译</strong>
@@ -197,8 +250,8 @@ style<span class="nb">{</span>gb7714-2015<span class="nb">}</span>
 <code>.bbl</code>是系统自动生成文件，所有修改会被下一次编译覆盖，文献修改、增删只能在<code>.bib</code>文件中操作。</p>
 </li>
 <li>
-<p><strong>引用标签唯一不重复</strong>
-整篇论文中，每一个文献 key 只能出现一次，重复会直接导致标号错乱、文献串位。</p>
+<p><strong>文献条目的 key 需要唯一</strong>
+同一个 <code>.bib</code> 文件中，不同文献条目不能使用相同的 key，否则 BibTeX 无法准确区分条目。同一个 key 可以在正文的多处 <code>\cite{}</code> 中重复使用，这些位置会指向同一条参考文献。</p>
 </li>
 <li>
 <p><strong>严格区分中英文符号</strong>
@@ -209,29 +262,42 @@ bib 文件内所有标点、括号、逗号必须是英文半角，中文符号�
 增删文献、修改文献信息、调整引用位置后，必须完整执行四轮编译，否则格式不更新。</p>
 </li>
 <li>
-<p><strong>异常报错万能修复法</strong>
-出现标号错乱、文献丢失、莫名报错：
-手动删除所有 <code>.aux .bbl .blg .log</code> 辅助文件，再完整执行四步编译，可解决 90% 问题。</p>
+<p><strong>重新生成辅助文件</strong>
+修改引用后仍出现旧编号或旧内容时，可以先查看 <code>.blg</code> 和 <code>.log</code> 中的报错。确认 <code>.bib</code> 语法、文件名和 key 都正确后，再删除 <code>.aux</code>、<code>.bbl</code>、<code>.blg</code>、<code>.log</code> 等辅助文件，并按完整顺序重新编译。清理辅助文件适合解决缓存的旧结果，不能替代对原始错误的检查。</p>
 </li>
 <li>
 <p><strong>区分中英文编译环境</strong>
-英文论文用原生 <code>plain</code>/<code>ieeetr</code> 样式；中文毕业论文必须使用 <code>gb7714-2015</code> 宏包，符合国家标准排版。</p>
+先按学校、期刊或会议的模板选择样式。使用 BibTeX 且要求 GB/T 7714—2015 时，可按第四节配置 <code>gbt7714</code>；模板已有设置时不重复加载。</p>
 </li>
 </ol>
-<h2 id="_6">七、极简总结</h2>
+<h2 id="七极简总结">七、极简总结</h2>
 <ol>
 <li>一次 PDF 扫引用 →  BibTeX 生成文献 → 两次 PDF 刷新格式</li>
 <li>所有文献数据只改 bib 文件，不动自动生成文件</li>
-<li>符号统一英文、标签统一匹配、编译顺序不缺失</li>
-<li>异常优先清理辅助文件重编译</li>
+<li>符号统一英文、key 唯一并与引用匹配、编译顺序不缺失</li>
+<li>异常先查看日志并修正原始问题，必要时清理辅助文件后重编译</li>
+</ol>
+<h2 id="八编译失败时的排查顺序">八、编译失败时的排查顺序</h2>
+<p>遇到参考文献显示为问号或文献列表为空时，可以按下面的顺序检查：</p>
+<ol>
+<li>先查看 <code>.blg</code> 和 <code>.log</code>，确认是否提示找不到文献库、缺少引用键或条目语法错误。</li>
+<li>核对 <code>{}</code> 中的文件名是否与实际 <code>.bib</code> 文件一致，并省略扩展名；检查 <code>\cite{}</code> 中的 key，注意大小写、连字符和下划线。</li>
+<li>修正文献条目的括号、逗号等语法问题后，按 <code>pdflatex → bibtex → pdflatex → pdflatex</code> 的顺序编译。使用 XeLaTeX 的项目应按模板要求替换 LaTeX 编译器，BibTeX 这一步仍需执行。</li>
+<li>原始问题已修正但仍显示旧编号或旧内容时，再清理 <code>.aux</code>、<code>.bbl</code>、<code>.blg</code> 等辅助文件，并完整编译一次。</li>
 </ol></div>
 </div>
 </div><footer>
+<div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-left" href="../markdown2anything/" title="Markdown 一键发布到社交平台"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-right" href="../undergraduate/" title="本科毕业设计">Next <span class="icon icon-circle-arrow-right"></span></a>
+</div>
 <hr/>
 <div role="contentinfo">
 <!-- Copyright etc -->
 <p>OpenHUTB 版权所有 © 2026</p>
 </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
 </div>
 </div>
@@ -240,8 +306,10 @@ bib 文件内所有标点、括号、逗号必须是英文半角，中文符号�
 <div aria-label="Versions" class="rst-versions" role="note">
 <span class="rst-current-version" data-toggle="rst-current-version">
 <span>
-<a href="https://github.com/OpenHUTB/.github" style="color: #fcfcfc">OpenHUTB</a>
+<a class="fa fa-github" href="https://github.com/OpenHUTB/.github" style="color: #fcfcfc"> GitHub</a>
 </span>
+<span><a href="../markdown2anything/" style="color: #fcfcfc">« Previous</a></span>
+<span><a href="../undergraduate/" style="color: #fcfcfc">Next »</a></span>
 </span>
 </div>
 <script src="../js/jquery-3.6.0.min.js"></script>
@@ -254,7 +322,6 @@ bib 文件内所有标点、括号、逗号必须是英文半角，中文符号�
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script>
-<script src="../js/umlconvert.js"></script>
 <script src="../search/main.js"></script>
 <script>
         jQuery(function () {

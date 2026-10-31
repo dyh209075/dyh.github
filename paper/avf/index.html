@@ -4,18 +4,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://openhutb.github.io/.github/paper/avf/" rel="canonical"/>
 <link href="../../img/favicon.ico" rel="shortcut icon"/>
-<title>如何让机器像人一样融合视听信息来“感受”情绪？ - 社区介绍</title>
+<title>论文成果：AVF-BEL 视听融合 - 社区介绍</title>
 <link href="../../css/theme.css" rel="stylesheet"/>
 <link href="../../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
-<link href="../../extra.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "\u5982\u4f55\u8ba9\u673a\u5668\u50cf\u4eba\u4e00\u6837\u878d\u5408\u89c6\u542c\u4fe1\u606f\u6765\u201c\u611f\u53d7\u201d\u60c5\u7eea\uff1f";
+        var mkdocs_page_name = "\u8bba\u6587\u6210\u679c\uff1aAVF-BEL \u89c6\u542c\u878d\u5408";
         var mkdocs_page_input_path = "paper/avf.md";
-        var mkdocs_page_url = null;
+        var mkdocs_page_url = "/.github/paper/avf/";
       </script>
 <!--[if lt IE 9]>
       <script src="../../js/html5shiv.min.js"></script>
@@ -31,13 +30,17 @@
 <a class="icon icon-home" href="../.."> 社区介绍
         </a><div role="search">
 <form action="../../search.html" class="wy-form" id="rtd-search-form" method="get">
-<input aria-label="Search docs" name="q" placeholder="搜索文档" title="Type search term here" type="text"/>
+<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
 </form>
 </div>
 </div>
 <div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../..">首页</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../simulator/">模拟器简介</a>
 </li>
 </ul>
 <ul>
@@ -72,6 +75,57 @@
 <li class="toctree-l1"><a class="" href="https://openhutb.github.io/doc/build_carla/#internet">科学上网</a>
 </li>
 </ul>
+<p class="caption"><span class="caption-text">贡献相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../codespace/">基于浏览器的贡献指南</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/sign_up/">注册 Github 账号</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/vscode_push/">使用 VScode 推送代码</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../pycharm-tutorial/">PyCharm 教程</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../resolve_conflict/">使用 TortoiseGit 解决冲突</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/merge_commit/">合并提交</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/vm_disk/">给 Ubuntu 虚拟机硬盘扩容</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../note/">注意事项</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../wsl/">wsl 安装与配置和卸载</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">工具与资源</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/">开源工具列表</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../blender/">三维建模软件 Blender 介绍</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../markdown2anything/">Markdown 一键发布到社交平台</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">学习与论文</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../bib_reference_guide/">Latex文献引用编译办法</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../undergraduate/">本科毕业设计</a>
+</li>
+<li class="toctree-l1 current"><a class="reference internal current" href="./">论文成果：AVF-BEL 视听融合</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#核心思想向大脑学习通感">核心思想：向大脑学习“通感”</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#亮点与优势轻量可解释">亮点与优势：轻量、可解释</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#应用展望为情感-ai-的飞入寻常百姓家铺路">应用展望：为情感 AI 的“飞入寻常百姓家”铺路</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../org/architecture/">社区组织形式</a>
+</li>
+</ul>
 </div>
 </div>
 </nav>
@@ -84,21 +138,22 @@
 <div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
 <ul class="wy-breadcrumbs">
 <li><a aria-label="Docs" class="icon icon-home" href="../.."></a></li>
-<li class="breadcrumb-item active">如何让机器像人一样融合视听信息来“感受”情绪？</li>
+<li class="breadcrumb-item">学习与论文</li>
+<li class="breadcrumb-item active">论文成果：AVF-BEL 视听融合</li>
 <li class="wy-breadcrumbs-aside">
-<a href="https://github.com/OpenHUTB/.github/edit/master/docs/paper/avf.md"> 编辑页面</a>
+<a class="icon icon-github" href="https://github.com/OpenHUTB/.github/edit/master/docs/paper/avf.md"> Edit on GitHub</a>
 </li>
 </ul>
 <hr/>
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<div><h1 id="_1">如何让机器像人一样融合视听信息来“感受”情绪？</h1>
+<div><h1 id="如何让机器像人一样融合视听信息来感受情绪">如何让机器像人一样融合视听信息来“感受”情绪？</h1>
 <p>当 AI 能精准识别图片、能流畅对话，我们似乎已经习惯了它“无所不能”。但一个根本性的挑战依然存在：<strong>AI 能理解人类的情绪吗？</strong></p>
-<p>目前主流的方案，无论是基于深度学习还是大模型，往往依赖于海量标注数据和巨大的算力。它们更像一个“黑箱”，虽然有效，却<strong>很难解释“为什么”</strong>。这让我们在追求可解释、低成本的 AI 情感应用时，总感到有些力不从心。</p>
+<p>目前主流的方案，无论是基于深度学习还是大模型（如chatgpt，豆包，deepseek等大模型），往往依赖于海量标注数据和巨大的算力。它们更像一个“黑箱”，虽然有效，却<strong>很难解释“为什么”</strong>。这让我们在追求可解释、低成本的 AI 情感应用时，总感到有些力不从心。</p>
 <p><img alt="" src="../../img/paper/accept.png"/></p>
 <p>来自 OpenHUTB 的研究团队，在人工智能领域顶级国际期刊《Information Fusion》上发表的最新研究成果，或许提供了一条全新的思路。他们提出的<strong>类脑情感学习的视听融合</strong>（Audio-Visual Fusion for Brain-like Emotion Learning, AVF-BEL）模型，不再单纯依赖数据“暴力计算”，而是选择了一条更优雅的路——<strong>模仿大脑处理情感的神经通路</strong>。</p>
-<h2 id="_2">核心思想：向大脑学习“通感”</h2>
+<h2 id="核心思想向大脑学习通感">核心思想：向大脑学习“通感”</h2>
 <p>人类的情感体验，往往是多感官融合的结果。一段悲伤的音乐配合灰暗的画面，远比单独的音乐或画面更能触动我们。这种<strong>视听整合</strong>发生在大脑的颞上沟等区域。</p>
 <p><img alt="" src="../../img/paper/neuro_architecture.png"/>
 </p><center>情绪生成神经网络架构图（动态情绪响应的视觉和听觉处理）</center>
@@ -123,7 +178,7 @@
 </ol>
 <p><img alt="" src="../../img/paper/AVF-BEL.png"/>
 </p><center>AVF-BEL 模型架构</center>
-<h2 id="_3">亮点与优势：轻量、可解释</h2>
+<h2 id="亮点与优势轻量可解释">亮点与优势：轻量、可解释</h2>
 <p>与动辄百亿参数、需要 GPU 集群的多模态大模型（如 ViLBERT、CLIP）相比，AVF-BEL 模型展现出了独特的魅力：</p>
 <ul>
 <li><strong>极致轻量</strong>：整个模型总参数量仅约 208 万，其中核心的情感学习模块更是只有 8 个可训练的权重。它可以在普通 CPU（如 Intel i7-6500U）和 8GB 内存的电脑上运行，整个代码和数据包不足 50MB。</li>
@@ -148,7 +203,7 @@
 </tbody>
 </table>
 <ul>
-<li><strong>性能验证</strong>：在一个包含 1520 个视听情绪样本的数据集上，完整的 AVF-BEL 模型在预测 EPP 的准确率（0.79）、召回率（0.77）和 F1 分数（0.78）上，均显著优于仅使用单模态或缺少融合模块的变体模型，证明了视听融合的有效性。</li>
+<li><strong>性能验证</strong>：在一个包含 1520 个视听情绪样本的数据集上，完整的 AVF-BEL 模型在预测 EPP 的准确率（0.79）、召回率（0.77）和 F1 分数（0.78）上，均显著优于仅使用单模态或缺少融合模块的变体模型，这证明了视听融合的有效性。</li>
 </ul>
 <table>
 <thead>
@@ -166,16 +221,22 @@
 </tr>
 </tbody>
 </table>
-<h2 id="ai">应用展望：为情感 AI 的“飞入寻常百姓家”铺路</h2>
-<p>AVF-BEL 模型的成功，其意义不仅在于提出一个新模型，更在于指明了<strong>机器人情感生成领域一个可能的重要发展方向</strong>。它证明了，通过向生物智能“取经”，我们完全有可能打造出<strong>更高效、更易于理解</strong>的情感AI系统。这为情感计算技术在资源受限的移动端、嵌入式机器人、以及隐私敏感的边缘设备上的大规模部署，扫清了关键障碍。</p>
+<h2 id="应用展望为情感-ai-的飞入寻常百姓家铺路">应用展望：为情感 AI 的“飞入寻常百姓家”铺路</h2>
+<p>AVF-BEL 模型的成功，其意义不仅在于提出一个新模型，更在于指明了<strong>机器人情感生成领域一个可能的重要发展方向</strong>。它证明了，通过向生物智能“取经”，我们完全有可能打造出一个<strong>更高效、更易于理解</strong>的情感AI系统。这为情感计算技术在资源受限的移动端、嵌入式机器人、以及隐私敏感的边缘设备上的大规模部署等方面，扫清了关键障碍。</p>
 <p>未来，研究团队计划进一步整合海马体、前额叶皮层等更多类脑模块，搭建一座<strong>连接“人工神经网络”与“生物神经网络”的桥梁</strong>。通过这座桥梁，可以从计算的视角，去验证、质疑并最终加深对我们自己大脑的理解。或许在不远的将来，我们身边的智能设备不再是一堆冰冷的代码，而是真正能“读懂”我们情绪的伙伴。</p></div>
 </div>
 </div><footer>
+<div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-left" href="../../undergraduate/" title="本科毕业设计"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-right" href="../../org/architecture/" title="社区组织形式">Next <span class="icon icon-circle-arrow-right"></span></a>
+</div>
 <hr/>
 <div role="contentinfo">
 <!-- Copyright etc -->
 <p>OpenHUTB 版权所有 © 2026</p>
 </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
 </div>
 </div>
@@ -184,8 +245,10 @@
 <div aria-label="Versions" class="rst-versions" role="note">
 <span class="rst-current-version" data-toggle="rst-current-version">
 <span>
-<a href="https://github.com/OpenHUTB/.github" style="color: #fcfcfc">OpenHUTB</a>
+<a class="fa fa-github" href="https://github.com/OpenHUTB/.github" style="color: #fcfcfc"> GitHub</a>
 </span>
+<span><a href="../../undergraduate/" style="color: #fcfcfc">« Previous</a></span>
+<span><a href="../../org/architecture/" style="color: #fcfcfc">Next »</a></span>
 </span>
 </div>
 <script src="../../js/jquery-3.6.0.min.js"></script>
@@ -198,7 +261,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script>
-<script src="../../js/umlconvert.js"></script>
 <script src="../../search/main.js"></script>
 <script>
         jQuery(function () {
