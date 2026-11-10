@@ -6,13 +6,13 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://openhutb.github.io/.github/submit/" rel="canonical"/>
 <link href="../img/favicon.ico" rel="shortcut icon"/>
-<title>文档修改与提交指南 - 社区介绍</title>
+<title>文档修改指南 - 社区介绍</title>
 <link href="../css/theme.css" rel="stylesheet"/>
 <link href="../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "\u6587\u6863\u4fee\u6539\u4e0e\u63d0\u4ea4\u6307\u5357";
+        var mkdocs_page_name = "\u6587\u6863\u4fee\u6539\u6307\u5357";
         var mkdocs_page_input_path = "submit.md";
         var mkdocs_page_url = "/.github/submit/";
       </script>
@@ -95,7 +95,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../wsl/">wsl 安装与配置和卸载</a>
 </li>
-<li class="toctree-l1 current"><a class="reference internal current" href="./">文档修改与提交指南</a>
+<li class="toctree-l1 current"><a class="reference internal current" href="./">文档修改指南</a>
 <ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="#1-下载-git">1. 下载 Git</a>
 </li>
@@ -151,7 +151,7 @@
 <ul class="wy-breadcrumbs">
 <li><a aria-label="Docs" class="icon icon-home" href=".."></a></li>
 <li class="breadcrumb-item">贡献相关</li>
-<li class="breadcrumb-item active">文档修改与提交指南</li>
+<li class="breadcrumb-item active">文档修改指南</li>
 <li class="wy-breadcrumbs-aside">
 <a class="icon icon-github" href="https://github.com/OpenHUTB/.github/edit/master/docs/submit.md"> Edit on GitHub</a>
 </li>
@@ -166,7 +166,8 @@
 <p>下载后会得到一个 <code>.exe</code> 文件，双击运行安装：
 <a href="https://git-scm.com/install/windows">https://git-scm.com/install/windows</a></p>
 <h2 id="2-下载-visual-studio-code">2. 下载 Visual Studio Code</h2>
-<p>下载后会得到一个 <code>.exe</code> 文件，双击运行安装：
+<p>下载后会得到一个 <code>.exe</code> 文件，双击运行安装：  <br/>
+(打开网站首页第一个是Visual Studio 2026,第二个才是所需的Visual Studio Code)
 <a href="https://visualstudio.microsoft.com/zh-hans/downloads/">https://visualstudio.microsoft.com/zh-hans/downloads/</a></p>
 <h2 id="3-克隆仓库">3. 克隆仓库</h2>
 <blockquote>
@@ -199,7 +200,7 @@
 <p>修改一些表达不到位的句子。</p>
 </li>
 <li>
-<p>加一些跳转链接.
+<p>加一些跳转链接。
 <img alt="wmx007" src="../img/wmx007.png"/></p>
 </li>
 </ol>
@@ -229,8 +230,7 @@
 <ol>
 <li>
 <p>下载 MkDocs（在命令行中运行以下命令下载）：
-   </p><div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs
-pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material
+   </p><div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material<span class="w"> </span>mkdocs-mermaid2-plugin
 </code></pre></div>
 <em>（如果出现报错，可以将错误信息发给 AI 解决）</em>
 </li>
